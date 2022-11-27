@@ -13,11 +13,8 @@ const bot = linebot({
 const linebotParser = bot.parser();
 bot.on('message', function (event) {
   console.log(event);
-  switch (event.message.text) {
-    case "嗨":
-      event.reply("嗨，我是路忻")
-    default:
-      event.reply("你在說什麼？")
+  if (event.message.text.includes("嗨")) {
+    event.reply("嗨你好，我叫做路忻")
   }
 });
 app.post('/', linebotParser);

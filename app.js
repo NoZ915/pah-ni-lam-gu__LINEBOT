@@ -13,11 +13,12 @@ const bot = linebot({
 const linebotParser = bot.parser();
 bot.on('message', function (event) {
   console.log(event);
-  event.reply(event.message.text).then(function (data) {
-    // success
-  }).catch(function (error) {
-    // error
-  });
+  switch (event.message.text) {
+    case "嗨":
+      event.reply("嗨，我是路忻")
+    default:
+      event.reply("你在說什麼？")
+  }
 });
 app.post('/', linebotParser);
 app.listen(process.env.PORT || 3000, () => {

@@ -21,7 +21,7 @@ bot.on('message', function (event) {
         "安安你好我叫做路忻"
       ];
       let randomNumber = Math.floor(Math.random()) * randomMessage.length + 1;
-      event.reply(randomMessage[randomNumber]);
+      event.reply(randomMessage[randomNumber - 1]);
     }
     randomMessageSayHi();
   } else if (event.message.text === "0019470313") {

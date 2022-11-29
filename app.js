@@ -14,9 +14,25 @@ const linebotParser = bot.parser();
 bot.on('message', function (event) {
   console.log(event);
   if (event.message.text.includes("嗨")) {
-    event.reply("嗨你好，我叫做路忻")
-  } else if (event.message.text.includes("0019470313")) {
-
+    function randomMessageSayHi() {
+      let randomMessage = [
+        "哈囉我是路忻",
+        "嗨我是路忻",
+        "安安你好我叫做路忻"
+      ];
+      let randomNumber = Math.floor(Math.random()) * randomMessage.length + 1;
+      event.reply(randomMessage[randomNumber]);
+    }
+    randomMessageSayHi();
+  } else if (event.message.text === "0019470313") {
+  } else if (event.message.text === "迎風之舞") {
+  } else if (event.message.text === "圓環") {
+  } else if (event.message.text === "七路交匯之圓環") {
+  } else if (event.message.text === "南門路") {
+  } else if (event.message.text === "檨仔林府文廟") {
+  } else if (event.message.text === "到檨仔林府文廟了") {
+  } else if (event.message.text === "孔廟地圖") {
+  } else if (event.message.text === "HUATINN") {
   }
   else {
     event.reply("這個嘛...我不太懂欸")

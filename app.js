@@ -1,6 +1,13 @@
 const express = require('express')
 const app = express()
 const linebot = require('linebot');
+
+let randomMessage = [
+  "哈囉我是路忻",
+  "嗨嗨我是路忻",
+  "安安你好我叫做路忻"
+];
+let randomNumber = Math.floor(Math.random()) * randomMessage.length + 1;
 // 判別開發環境
 if (process.env.NODE_ENV !== 'production') {      // 如果不是 production 模式
   require('dotenv').config()                      // 使用 dotenv 讀取 .env 檔案
@@ -15,12 +22,6 @@ bot.on('message', function (event) {
   console.log(event);
   if (event.message.text.includes("嗨")) {
     function randomMessageSayHi() {
-      let randomMessage = [
-        "哈囉我是路忻",
-        "嗨嗨我是路忻",
-        "安安你好我叫做路忻"
-      ];
-      let randomNumber = Math.floor(Math.random()) * randomMessage.length + 1;
       event.reply(randomMessage[randomNumber - 1]);
     }
     randomMessageSayHi();

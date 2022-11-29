@@ -15,7 +15,10 @@ bot.on('message', function (event) {
   console.log(event);
   if (event.message.text.includes("嗨")) {
     event.reply("嗨你好，我叫做路忻")
-  } else {
+  } else if (event.message.text.includes("0019470313")) {
+
+  }
+  else {
     event.reply("這個嘛...我不太懂欸")
   }
 });

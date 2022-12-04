@@ -17,7 +17,7 @@ bot.on('message', function (event) {
     function randomMessageSayHi() {
       let randomMessage = [
         "哈囉我是路忻",
-        "嗨嗨我是路忻",
+        "嗨嗨",
         "安安你好我叫做路忻"
       ];
       let randomNumber = Math.floor(Math.random() * randomMessage.length);
@@ -33,6 +33,7 @@ bot.on('message', function (event) {
   } else if (event.message.text === "到檨仔林府文廟了") {
   } else if (event.message.text === "孔廟地圖") {
   } else if (event.message.text === "HUATINN") {
+  } else if (event.message.text === "大成") {
   }
   else {
     event.reply("這個嘛...我不太懂欸")

@@ -34,6 +34,10 @@ bot.on('message', function (event) {
   } else if (event.message.text === "孔廟地圖") {
   } else if (event.message.text === "HUATINN") {
   } else if (event.message.text === "大成") {
+  } else if (event.message.text === "泮") {
+  } else if (event.message.text === "詩經魯頌泮水篇") {
+  } else if (event.message.text === "遊泮") {
+  } else if (event.message.text === "孝子祠") {
   }
   else {
     event.reply("這個嘛...我不太懂欸")

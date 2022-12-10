@@ -38,6 +38,20 @@ bot.on('message', function (event) {
   } else if (event.message.text === "詩經魯頌泮水篇") {
   } else if (event.message.text === "遊泮") {
   } else if (event.message.text === "孝子祠") {
+  } else if (event.message.text === "森山松之助") {
+  } else if (event.message.text === "南門町二丁目") {
+  } else if (event.message.text === "到臺南地方法院了") {
+  } else if (event.message.text === "到台南地方法院了") {
+  } else if (event.message.text === "臺南地方法院") {
+  } else if (event.message.text === "台南地方法院") {
+  } else if (event.message.text === "1944") {
+  } else if (event.message.text === "法庭老照片") {
+  } else if (event.message.text === "濾色片") {
+  } else if (event.message.text === "南門町三丁目32番地") {
+  } else if (event.message.text === "到湯德章大道1號了") {
+  } else if (event.message.text === "YEHSHYRTAO") {
+  } else if (event.message.text === "yehshyrtao") {
+  } else if (event.message.text === "葉石濤文學紀念館") {
   }
   else {
     event.reply("這個嘛...我不太懂欸")
